@@ -51,6 +51,7 @@ class ApplicationTest extends NsTest {
         assertSimpleTest(() -> {
             runException("1000j");
             assertThat(output()).contains(ERROR_MESSAGE);
+            //요구사항에서는 분명 잘못된 입력을 받으면 프로그램을 종료시키라고 했는데...
         });
     }
 
